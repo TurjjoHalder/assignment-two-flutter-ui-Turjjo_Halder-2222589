@@ -16,21 +16,24 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(56.0),
+        child: AppBarModed(),
+      ),
       body: PageView(
         controller: _pageController,
         physics: const NeverScrollableScrollPhysics(),
-        children: const [
-          HomePage(),
-          ReportsPage(),
-          Cards(),
-          ProfilePage(),
-        ],
+        children: const [HomePage(), ReportsPage(), Cards(), ProfilePage()],
       ),
       bottomNavigationBar: AppBottomNav(
         currentIndex: _currentIndex,
         onTap: (index) {
           setState(() => _currentIndex = index);
-          _pageController.animateToPage(index, duration: const Duration(milliseconds: 350), curve: Curves.easeInOut);
+          _pageController.animateToPage(
+            index,
+            duration: const Duration(milliseconds: 350),
+            curve: Curves.fastEaseInToSlowEaseOut,
+          );
         },
       ),
     );

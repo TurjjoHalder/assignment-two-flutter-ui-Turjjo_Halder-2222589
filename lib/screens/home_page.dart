@@ -22,9 +22,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const SizedBox(height: 16),
-
-                    TopBar(clientName: "Turjjo Halder"),
+                   
                     const SizedBox(height: 20),
                     buildBalanceCard(),
                     const SizedBox(height: 24),

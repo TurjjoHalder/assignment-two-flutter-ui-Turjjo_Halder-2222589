@@ -17,9 +17,7 @@ class _ProfilePageState extends State<ProfilePage> {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
-              const SizedBox(height: 16),
-              TopBar(clientName: "Turjjo Halder"),
-              const SizedBox(height: 12),
+              const SizedBox(height: 20),
 
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -77,5 +75,3 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
-
-
