@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     TransactionItem(
                       icon: Icons.cyclone_rounded,
-                      iconColor: Colors.blueGrey,
+                      iconColor: const Color.fromARGB(255, 83, 166, 207),
                       iconBg: const Color(0xFFECEFF1),
                       title: 'AI Subscription',
                       subtitle: 'Digital tools • 13 days ago',
