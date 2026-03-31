@@ -30,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
         currentIndex: _currentIndex,
         onTap: (index) {
           setState(() => _currentIndex = index);
-          _pageController.jumpToPage(index);
+          _pageController.animateToPage(index, duration: const Duration(milliseconds: 350), curve: Curves.easeInOut);
         },
       ),
     );
